@@ -1,0 +1,9 @@
+# RESPUESTAS
+- **Pregunta 1.** La empresa desea utilizar un modelo de inteligencia artificial para identificar automáticamente las habilidades técnicas del candidato a partir de su carta de presentación y compararlas con las requeridas por la vacante. Explique cómo integraría esta capacidad a la solución desarrollada.
+> La solución se puede implementar de la siguiente maner: despues de recibir los datos de la api, puede haber un intermediario que ahora será el agente de IA, y a partir de lo que el modelo de ia resuelva, la lógica del negocio continua.
+
+- **Pregunta 2.** Suponga que el modelo de IA devuelve ocasionalmente una respuesta con formato inválido o habilidades que no existen en el catálogo de la empresa. Explique cómo debería manejar esta situación el backend.
+> Se debe implementar un nuevo validador, el el cual debe recibir las respuestas de el agente de IA, y luego devolver si es válido o no, si este es inválido crear un nuevo error explicabdo el porque del error, de lo contrario el flujo continua.
+
+- **Pregunta 3.** ¿Considera apropiado reemplazar completamente las reglas determinísticas utilizadas para calcular la prioridad por una decisión realizada por un modelo de IA, teniendo en cuenta que la decisión afecta directamente a personas? Justifique técnicamente su respuesta.
+> De manera directa un modelo de IA actualmente no es eficiente para que tome este dipo de decisiones debido a que la información devuelta puede estar sesgada, puede devolver información innecesaria y en el peo de los casos dejar de funcionar, debido al límite de tokens, si esto llega a pasar, la API queda inservible, y esto perjudica a la empresa y a los usuarios.
