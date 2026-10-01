@@ -190,7 +190,7 @@ Al registrar una postulación, el sistema calcula de forma automática un **punt
 
 1. **Clonar el repositorio e instalar dependencias**:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/Anderson-Oloroso/evaluacion-henrik-anderson-oloroso-garcia.git
    cd job-applications-api
    npm install
    ```
